@@ -7,7 +7,6 @@ CREATE TABLE tenants (
     name TEXT NOT NULL,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
-
 -- Properties Table
 CREATE TABLE properties (
     id TEXT NOT NULL, -- Not PK solely, might be composite with tenant in real world, but strict ID here
